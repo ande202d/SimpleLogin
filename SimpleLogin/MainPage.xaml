@@ -9,6 +9,35 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <StackPanel HorizontalAlignment="Left" Height="752" Margin="132,120,0,0" VerticalAlignment="Top" Width="704" Background="#FF0077FF">
+            <TextBlock Height="120" Margin="50,50,50,0" Text="Login" TextWrapping="Wrap" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" d:LayoutRounding="Auto"
+                       FontSize="50" 
+                       FontWeight="Bold"
+                       TextAlignment="Start"
+                       Padding="5,40,0,0"
+                       >
+                <TextBlock.RenderTransform>
+                    <CompositeTransform SkewY="0" TranslateY="0"/>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBox Height="120" Margin="50,0,50,0" Text="Username"
+                     FontSize="50"
+                     Padding="50,20,0,0"
+                     />
+            <PasswordBox HorizontalAlignment="Stretch" Height="120" Margin="50,50,50,0" VerticalAlignment="Stretch" Password="Password"
+                         
+                         FontSize="50"
+                         Padding="50,20,0,0"
+                         />
+            <StackPanel Height="120" Margin="50,50,50,50" Orientation="Horizontal" BorderBrush="#FF262DCB">
+                <Button Content="Login" FontSize="50" HorizontalAlignment="Stretch" Margin="20,0,0,0" VerticalAlignment="Stretch" Width="250" Height="80" BorderBrush="Black">
+                    <Button.Background>
+                        <AcrylicBrush TintColor="Lime"/>
+                    </Button.Background>
+                </Button>
+                <Button Content="Cancel" FontSize="50" HorizontalAlignment="Stretch" Height="80" Margin="65,0,-20,0" VerticalAlignment="Stretch" Width="250" Background="Lime" BorderBrush="Black"/>
+            </StackPanel>
+        </StackPanel>
 
     </Grid>
 </Page>
